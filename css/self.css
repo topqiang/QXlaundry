@@ -1,23 +1,89 @@
 @charset "utf-8";
 body{
 	background-image:linear-gradient(to right,rgb(161, 128, 224),rgb(96, 162, 262));
-	height: 100vh;
+	background-image:-webkit-linear-gradient(to right,rgb(161, 128, 224),rgb(96, 162, 262));
+}
+.content{
+	height: calc(100vh - 49px);
 	overflow-y: scroll;
+	-webkit-overflow-scrolling:touch;
 }
 .bgtrans{
 	background-color: rgba(0, 0, 0, 0);
 }
 .colwhit{
-	color: white !important;
+	color: #fff !important;
+}
+.colccc{
+	color: rgb(199, 199, 199);
+}
+.colyel{
+	color: rgb(255, 134, 0);
+}
+.colblu{
+	color: rgb(40, 158, 245);
+}
+.mat10{
+	margin-top: 10px;
+}
+.fs26{
+	font-size: 26px;
+}
+.ih40{
+	line-height: 40px;
+}
+.ih30{
+	line-height: 30px;
+}
+.btnbg{
+	background: url('../img/btnbg.png') no-repeat center center;
+	background-size: 120px 40px;
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+}
+.bgwhit{
+	background: #fff;
+}
+.texcen{
+	text-align: center;
 }
 .title img{
     margin-top: 11px;
     height: 22px;
 }
-.bor30{
-	border-radius: 30px;
+.row img{
+	width: 60%;
+}
+.bor20{
+	border-radius: 20px;
 	width: 100%;
 	overflow: hidden;
+}
+.homenum{
+	display: inline-block;
+    background: rgba(214, 249, 248, 0.8);
+    padding: 0px 30px;
+    border-radius: 20px;
+}
+.pore{
+	position: relative;
+}
+.poab{
+	position: absolute;
+}
+.panel{
+	height: 160px;
+    width: 160px;
+    box-shadow: 1px 1px 8px #bbb;
+    border-radius: 80px;
+    left: 50%;
+    margin-left: -80px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
 }
 .bar-footer .icon{
 	background-size: 24px auto !important;

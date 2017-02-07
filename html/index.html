@@ -16,10 +16,19 @@
 		</div>
 		<button class="button button-clear colwhit">故障分析</button>
 	</div>
-	<div class="content padding has-header has-footer">
-		<div class="bor20" style="height:150px;">
+	<div class="content padding has-header has-footer" style="padding-bottom:70px;">
+		<div class="bor20 mat10" style="height:150px;">
 			<div class="xq_slide_out">
 				<ul class="xq_slide_in">
+					<li>
+						<a><img src="../img/topimg.png"/></a>
+					</li>
+					<li>
+						<a><img src="../img/topimg.png"/></a>
+					</li>
+					<li>
+						<a><img src="../img/topimg.png"/></a>
+					</li>
 					<li>
 						<a><img src="../img/topimg.png"/></a>
 					</li>
@@ -29,10 +38,48 @@
 				</ul>
 			</div>
 		</div>
-		<div class="bor20"></div>
-		<div class="bor20"></div>
+		<div class="bor20 mat10 bgwhit texcen pore" style="height:260px">
+			<div class="poab panel bgwhit colccc">
+				<div>剩余</div>
+				<div><span class="fs26 colblu">25</span>min</div>
+				<div>工作中</div>
+			</div>
+			<canvas id="charts" style="" width="220" height="200"></canvas>
+			<div class="ih30">
+				<span class="homenum">1号楼301</span>
+			</div>
+		</div>
+		<div class="bor20 mat10 bgwhit" style="height:180px">
+			<div class="row texcen mat10 colccc">
+				<div class="col col-25">
+					<img src="../img/nav1.png"/>
+					<div class="">单脱水</div>
+					<div class="colyel">￥<span class="fs26">1</span></div>
+				</div>
+				<div class="col col-25">
+					<img src="../img/nav2.png"/>
+					<div class="">快速洗</div>
+					<div class="colyel">￥<span class="fs26">2</span></div>
+
+				</div>
+				<div class="col col-25">
+					<img src="../img/nav3.png"/>
+					<div class="">标准洗</div>
+					<div class="colyel">￥<span class="fs26">3</span></div>
+
+				</div>
+				<div class="col col-25">
+					<img src="../img/nav4.png"/>
+					<div class="">大物洗</div>
+					<div class="colyel">￥<span class="fs26">4</span></div>
+				</div>
+			</div>
+			<div class="texcen ih30 colwhit">
+				<span class="btnbg">充值中心</span>
+			</div>
+		</div>
 	</div>
-	<div class="bar-footer tabs tabs-icon-top">
+	<div class="bar-footer tabs tabs-icon-bottom">
 		<a class="tab-item on">
 		    <i class="icon icon-xiyi"></i>
 		    洗衣
@@ -50,14 +97,30 @@
 <script src="../js/jquery-1.8.3.js"></script>
 <script src="../js/xq_slide.js"></script>
 <script>
-$(".xq_slide_out").xq_slide({
-			type:"h",//轮播方式  h水平轮播；v垂直轮播；o透明切换
-			vatical:false,//图片描述性文本 true 显示 false不显示
-			choseBtn:false,//是否显示上下切换按钮
-			speed:5000,//动画间隔的时间，以毫秒为单位。
-			mousestop:false,//当鼠标移上去是否停止循环,针对PC端
-			showbar:true,//是否显示轮播导航bar
-			openmb:true//是否开启移动端支持
-		});
+	$(".xq_slide_out").xq_slide({
+		type:"h",//轮播方式  h水平轮播；v垂直轮播；o透明切换
+		vatical:false,//图片描述性文本 true 显示 false不显示
+		choseBtn:false,//是否显示上下切换按钮
+		speed:3000,//动画间隔的时间，以毫秒为单位。
+		mousestop:false,//当鼠标移上去是否停止循环,针对PC端
+		showbar:true,//是否显示轮播导航bar
+		openmb:true//是否开启移动端支持
+	});
+
+	var charts = document.querySelector("#charts");
+	var ctx=charts.getContext("2d");
+	ctx.beginPath();
+	ctx.lineWidth = 10;
+	ctx.strokeStyle="#eee";
+	ctx.arc(110,110,100,3/4*Math.PI,1/4*Math.PI);
+	ctx.stroke();
+	ctx.closePath();
+	ctx.beginPath();
+	var grd=ctx.createLinearGradient(0,0,220,0);
+	grd.addColorStop(0,"rgb(96, 162, 262)");
+	grd.addColorStop(1,"rgb(161, 128, 224)");
+	ctx.strokeStyle=grd;
+	ctx.arc(110,110,100,3/4*Math.PI,-1/4*Math.PI);
+	ctx.stroke();
 </script>
 </html>

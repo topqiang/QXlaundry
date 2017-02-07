@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{
+	background-image:linear-gradient(to right,rgb(161, 128, 224),rgb(96, 162, 262));
+	height: 100vh;
+	overflow-y: scroll;
+}
+.bgtrans{
+	background-color: rgba(0, 0, 0, 0);
+}
+.colwhit{
+	color: white !important;
+}
+.title img{
+    margin-top: 11px;
+    height: 22px;
+}
+.bor30{
+	border-radius: 30px;
+	width: 100%;
+	overflow: hidden;
+}
+.bar-footer .icon{
+	background-size: 24px auto !important;
+}
+.bar-footer .on{
+	color: rgb(42, 147, 240);
+}
+.on .icon-xiyi{
+	background: url('../img/xiyion.png') center center no-repeat;
+}
+.on .icon-shop{
+	background: url('../img/shopon.png') center center no-repeat;
+}
+.on .icon-self{
+	background: url('../img/selfon.png') center center no-repeat;
+}
+.icon-xiyi{
+	background: url('../img/xiyi.png') center center no-repeat;
+}
+.icon-shop{
+	background: url('../img/shop.png') center center no-repeat;
+}
+.icon-self{
+	background: url('../img/self.png') center center no-repeat;
+}

@@ -3,22 +3,21 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 	<meta charset="UTF-8"/>
-	<link href="../css/weui.css" rel="stylesheet">
+	<link href="../css/ionic.css" rel="stylesheet">
 	<link href="../css/self.css" rel="stylesheet">
 	<link href="../css/xq_slide.css" rel="stylesheet">
-
 	<title>倾象洗衣</title>
 </head>
-<body class="body">
-	<div class="padding bar-header texcen ih30">
-		<span class="fl colwhit">天津大学</span>
-		<a class="fr colwhit" href="guzhang.html">故障分析</a>
+<body>
+	<div class="bgtrans bar bar-header">
+		<button class="button button-clear colwhit">天津大学</button>
 		<div class="title colwhit">
 			<img src="../img/logotext.png">
 		</div>
+		<button class="button button-clear colwhit">故障分析</button>
 	</div>
-	<div class="content" style="padding:50px 10px 50px;">
-		<div class="bor20" style="height:150px;">
+	<div class="content padding has-header has-footer" style="padding-bottom:70px;">
+		<div class="bor20 mat10" style="height:150px;">
 			<div class="xq_slide_out">
 				<ul class="xq_slide_in">
 					<li>
@@ -52,24 +51,24 @@
 		</div>
 		<div class="bor20 mat10 bgwhit" style="height:180px">
 			<div class="row texcen mat10 colccc">
-				<div class="mainnav">
+				<div class="col col-25">
 					<img src="../img/nav1.png"/>
 					<div class="">单脱水</div>
 					<div class="colyel">￥<span class="fs26">1</span></div>
 				</div>
-				<div class="mainnav">
+				<div class="col col-25">
 					<img src="../img/nav2.png"/>
 					<div class="">快速洗</div>
 					<div class="colyel">￥<span class="fs26">2</span></div>
 
 				</div>
-				<div class="mainnav">
+				<div class="col col-25">
 					<img src="../img/nav3.png"/>
 					<div class="">标准洗</div>
 					<div class="colyel">￥<span class="fs26">3</span></div>
 
 				</div>
-				<div class="mainnav">
+				<div class="col col-25">
 					<img src="../img/nav4.png"/>
 					<div class="">大物洗</div>
 					<div class="colyel">￥<span class="fs26">4</span></div>
@@ -80,21 +79,19 @@
 			</div>
 		</div>
 	</div>
-	<div class="bar-footer">
-	    <div class="weui-tabbar">
-	        <a href="" class="weui-tabbar__item on">
-	            <i class="icon icon-xiyi"></i>
-	            <p class="fs10">洗衣</p>
-	        </a>
-	        <a href="./shop.html" class="weui-tabbar__item">
-	            <i class="icon icon-shop"></i>
-	            <p class="fs10">商城</p>
-	        </a>
-	        <a href="./self.html" class="weui-tabbar__item">
-				<i class="icon icon-self"></i>
-	            <p class="fs10">我的</p>
-	        </a>
-	    </div>
+	<div class="bar-footer tabs tabs-icon-bottom">
+		<a class="tab-item on">
+		    <i class="icon icon-xiyi"></i>
+		    洗衣
+		</a>
+		<a class="tab-item">
+		    <i class="icon icon-shop"></i>
+		    商城
+		</a>
+		<a class="tab-item">
+		    <i class="icon icon-self"></i>
+		    我的
+		</a>
 	</div>
 </body>
 <script src="../js/jquery-1.8.3.js"></script>

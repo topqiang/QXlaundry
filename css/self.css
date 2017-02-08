@@ -1,12 +1,21 @@
 @charset "utf-8";
-body{
+.body{
+	background-color: rgb(161, 128, 224);
 	background-image:linear-gradient(to right,rgb(161, 128, 224),rgb(96, 162, 262));
 	background-image:-webkit-linear-gradient(to right,rgb(161, 128, 224),rgb(96, 162, 262));
 }
+a,a:link,a:active,a:hover,a:visited{
+	color: currentcolor;
+}
+*{
+	box-sizing: border-box;
+}
 .content{
-	height: calc(100vh - 49px);
 	overflow-y: scroll;
 	-webkit-overflow-scrolling:touch;
+}
+input{
+	border:none;
 }
 .bgtrans{
 	background-color: rgba(0, 0, 0, 0);
@@ -26,8 +35,14 @@ body{
 .mat10{
 	margin-top: 10px;
 }
+.fs10{
+	font-size: 10px;
+}
 .fs26{
 	font-size: 26px;
+}
+.fs20{
+	font-size: 20px;
 }
 .ih40{
 	line-height: 40px;
@@ -45,15 +60,21 @@ body{
 .bgwhit{
 	background: #fff;
 }
+.bgeee{
+	background-color: #eee;
+}
 .texcen{
 	text-align: center;
 }
 .title img{
-    margin-top: 11px;
     height: 22px;
 }
 .row img{
 	width: 60%;
+}
+.row .mainnav{
+	width: 25%;
+	float: left;
 }
 .bor20{
 	border-radius: 20px;
@@ -85,10 +106,43 @@ body{
     justify-content: space-around;
     padding: 20px;
 }
-.bar-footer .icon{
+.nobor:after{
+	border-bottom: none;
+}
+.disn{
+	display: none;
+}
+.mat0{
+	margin-top: 0px !important;
+}
+.weui-btn.on{
+	color: rgb(61, 161, 245);
+}
+.weui-btn.on:after{
+	border: 1px solid rgb(61, 161, 245);
+}
+.nobor:before,.nobor:before{
+	border-top: none;
+}
+.weui-btn_green{
+	background-color: rgb(61, 161, 245);
+}
+.colgreen{
+	color: rgb(61, 161, 245);
+}
+.weui-tabbar .icon{
 	background-size: 24px auto !important;
 }
-.bar-footer .on{
+.row{
+	display: flex;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.weui-tabbar .on{
 	color: rgb(42, 147, 240);
 }
 .on .icon-xiyi{
@@ -108,4 +162,46 @@ body{
 }
 .icon-self{
 	background: url('../img/self.png') center center no-repeat;
+}
+.padding{
+	padding: 10px;
+}
+.bar-header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	z-index: 10000;
+}
+.bor2cc{
+	border:2px solid #ddd;
+}
+.bora4{
+	border-radius: 4px;
+}
+.marb20{
+	margin-bottom: 20px;
+}
+.bar-footer{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+.icon{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+.mat50{
+	margin-top: 50px;
+}
+.logininp{
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #ddd;
+	padding-left: 20px;
 }

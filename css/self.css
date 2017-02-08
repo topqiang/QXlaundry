@@ -50,6 +50,9 @@ input{
 .ih30{
 	line-height: 30px;
 }
+.disib{
+	display: inline-block;
+}
 .btnbg{
 	background: url('../img/btnbg.png') no-repeat center center;
 	background-size: 120px 40px;
@@ -61,10 +64,13 @@ input{
 	background: #fff;
 }
 .bgeee{
-	background-color: #eee;
+	background-color: #eee !important;
 }
 .texcen{
 	text-align: center;
+}
+.colred{
+	color: rgb(255, 0, 30);
 }
 .title img{
     height: 22px;
@@ -144,6 +150,16 @@ input{
 }
 .weui-tabbar .on{
 	color: rgb(42, 147, 240);
+}
+.userinfo{
+	height: 173px;
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 .on .icon-xiyi{
 	background: url('../img/xiyion.png') center center no-repeat;

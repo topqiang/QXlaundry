@@ -41,6 +41,9 @@ input{
 .fs10{
 	font-size: 10px;
 }
+.fs18{
+	font-size: 16px;
+}
 .fs26{
 	font-size: 26px;
 }
@@ -55,6 +58,39 @@ input{
 }
 .disib{
 	display: inline-block;
+}
+.pad0{
+	padding: 0px;
+}
+.bor1c{
+	border-bottom: 1px solid #ccc;
+}
+.moneydiv{
+	border: 1px solid rgb(40, 158, 245);
+	padding: 5px 0px;
+	border-radius: 4px;
+	margin-right: 10px;
+	width: calc(33.33% - 7px);
+	margin-bottom: 10px;
+}
+.moneydiv .weui-grid__label{
+	color: #ddd;
+}
+.moneydiv.on .weui-grid__label{
+	color: #fff;
+}
+.moneydiv.on{
+	background: rgb(40, 158, 245);
+	color: #fff;
+}
+.moneydiv.on .colblu{
+	color: #fff;
+}
+.moneydiv:nth-child(3n){
+	margin-right: 0px;
+}
+.moneydiv:before,.moneydiv:after{
+	border: none;
 }
 .btnbg{
 	background: url('../img/btnbg.png') no-repeat center center;

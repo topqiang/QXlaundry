@@ -217,6 +217,37 @@ input{
 	left: 0px;
 	right: 0px;
 }
+.iconjf{
+	background: url('../img/jfdesc.png') no-repeat 0px center;
+	background-size: 20px 20px;
+	padding-left: 30px;
+}
+.bgdan{
+	background: url('../img/bgdan.png') no-repeat right center #fff;
+	background-size: auto 100%;
+	height: 140px;
+}
+.bgkuai{
+	background: url('../img/bgkuai.png') no-repeat right center #fff;
+	background-size: auto 100%;
+	height: 140px;
+}
+.bgbiao{
+	background: url('../img/bgbiao.png') no-repeat right center #fff;
+	background-size: auto 100%;
+	height: 140px;
+}
+.bgda{
+	background: url('../img/bgda.png') no-repeat right center #fff;
+	background-size: auto 100%;
+	height: 140px;
+}
+.juanbor{
+	border: 2px dotted #ddd;
+	height: 120px;
+	border-radius: 4px;
+	padding: 20px;
+}
 .icon{
 	display: inline-block;
 	width: 30px;

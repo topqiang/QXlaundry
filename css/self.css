@@ -23,6 +23,9 @@ input{
 .colwhit{
 	color: #fff !important;
 }
+.width{
+	width: 100%;
+}
 .colccc{
 	color: rgb(199, 199, 199);
 }
@@ -62,6 +65,15 @@ input{
 }
 .bgwhit{
 	background: #fff;
+}
+.ab0{
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+.op0{
+	opacity: 0;
 }
 .bgeee{
 	background-color: #eee !important;

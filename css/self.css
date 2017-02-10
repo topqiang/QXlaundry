@@ -258,6 +258,16 @@ input{
 	background-size: 20px 20px;
 	padding-left: 30px;
 }
+.iconadd{
+	padding-left: 30px;
+	background: url('../img/iconadd.png') no-repeat 0px center;
+	background-size: 20px 20px;
+}
+.iconloc{
+	padding-left: 30px;
+	background: url('../img/location.png') no-repeat 0px center;
+	background-size: 20px 20px;
+}
 .bgdan{
 	background: url('../img/bgdan.png') no-repeat right center #fff;
 	background-size: auto 100%;
@@ -292,6 +302,9 @@ input{
 .mat50{
 	margin-top: 50px;
 }
+.mar50{
+	margin-right: 50px;
+}
 .logininp{
 	display: inline-block;
 	width: 200px;
@@ -300,3 +313,20 @@ input{
 	background-color: #ddd;
 	padding-left: 20px;
 }
+ul.colblu li{
+	padding-left: 10px;
+}
+ul.colblu li:before{
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: rgb(61, 161, 245);
+}
+.weui-check__label .weui-cell__hd img{
+	width: 25px;
+	margin: 5px 5px 0px 0px;}

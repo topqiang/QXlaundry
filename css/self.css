@@ -16,6 +16,8 @@ a,a:link,a:active,a:hover,a:visited{
 }
 input{
 	border:none;
+	min-height: 20px;
+	margin-left: 10px;
 }
 .bgtrans{
 	background-color: rgba(0, 0, 0, 0);

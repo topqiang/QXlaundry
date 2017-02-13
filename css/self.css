@@ -268,6 +268,14 @@ input{
 	background: url('../img/location.png') no-repeat 0px center;
 	background-size: 20px 20px;
 }
+.iconedit{
+	background: url('../img/edit.png') no-repeat 0px center;
+	background-size: 20px 20px;
+}
+.icondel{
+	background: url('../img/del.png') no-repeat 0px center;
+	background-size: 20px 20px;
+}
 .bgdan{
 	background: url('../img/bgdan.png') no-repeat right center #fff;
 	background-size: auto 100%;

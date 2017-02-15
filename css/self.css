@@ -339,4 +339,17 @@ ul.colblu li:before{
 }
 .weui-check__label .weui-cell__hd img{
 	width: 25px;
-	margin: 5px 5px 0px 0px;}
+	margin: 5px 5px 0px 0px;
+}
+.hasmsg:before{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 8px;
+	height: 8px;
+	background: red;
+	border-radius: 4px;
+
+}

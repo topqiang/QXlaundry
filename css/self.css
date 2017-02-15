@@ -353,3 +353,28 @@ ul.colblu li:before{
 	border-radius: 4px;
 
 }
+.msglist{
+	margin-left: 60px;
+}
+.msg:before{
+	content: '';
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: -60px;
+	top: 0px;
+	background: url('../img/ling.png') no-repeat 0px center;
+	background-size: 40px 40px;
+}
+.msg:after{
+	content: '';
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 10px;
+	left: -10px;
+	border:5px solid transparent;
+	border-right: 5px solid #fff;
+}
